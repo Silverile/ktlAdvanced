@@ -6,9 +6,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://dpg-d2icuo6mcj7s738c2qh0-a.frankfurt-postgres.render.com:5432/energy_orders_db
-    username: ${DB_USER}
-    password: ${DB_PASS}
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
