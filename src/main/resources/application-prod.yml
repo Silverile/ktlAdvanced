@@ -1,0 +1,18 @@
+# application-prod.yml
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  datasource:
+    url: jdbc:postgresql://dpg-d2icuo6mcj7s738c2qh0-a.frankfurt-postgres.render.com:5432/energy_orders_db
+    username: ${DB_USER}
+    password: ${DB_PASS}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
